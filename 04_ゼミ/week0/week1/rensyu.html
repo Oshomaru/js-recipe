@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>WebExpertコーステンプレート</title>
+</head>
+
+<body>
+  <h1>僕の趣味は何でしょう？</h1>
+  <button id="snow">スノボ</button>
+  <button id="karaoke">カラオケ</button>
+  <button id="study">勉強</button>
+  <div id="answer">こんにちは</div>
+  <script>
+    const answer = document.getElementById("answer");
+    const snowButton = document.getElementById("snow");
+    const karaokeButton = document.getElementById("karaoke");
+    const studyButton = document.getElementById("study");
+
+    snowButton.onclick = function () {
+      answer.textContent = "正解です！";
+    };
+
+    karaokeButton.onclick = function () {
+      answer.textContent = "残念！";
+    };
+
+    studyButton.onclick = function () {
+      answer.textContent = "残念！";
+    };
+  </script>
+</body>
+
+</html>
